@@ -1,0 +1,326 @@
+/* Root theme variables */
+:root {
+  --color-bg: #0f172a;          /* slate-900 */
+  --color-surface: #111827;     /* gray-900 */
+  --color-surface-2: #1f2937;   /* gray-800 */
+  --color-text: #e5e7eb;        /* gray-200 */
+  --color-muted: #9ca3af;       /* gray-400 */
+  --color-primary: #60a5fa;     /* blue-400 */
+  --color-primary-600: #2563eb; /* blue-600 */
+  --color-border: #334155;      /* slate-700 */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --shadow-1: 0 4px 16px rgba(0,0,0,0.25);
+  --shadow-2: 0 8px 30px rgba(0,0,0,0.35);
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Reset-ish */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: radial-gradient(1200px 600px at 20% -10%, #1f2937 0%, #0b1020 45%, #060913 100%), var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App layout */
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+}
+
+/* Header / Nav */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-600));
+  border-radius: 8px;
+  box-shadow: var(--shadow-1);
+}
+
+.brand-name {
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+  background: rgba(96, 165, 250, 0.12);
+  color: #fff;
+}
+
+.nav a.active {
+  background: rgba(96, 165, 250, 0.18);
+  color: #fff;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 24px 0 48px;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  padding: 18px 0;
+  font-size: 14px;
+}
+
+/* Cards */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow-1);
+}
+
+.card + .card {
+  margin-top: 16px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-subtitle {
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+/* Buttons */
+.button {
+  appearance: none;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.06s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-1);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  background: #243244;
+  border-color: #3a4a5f;
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button.primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-600));
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.primary:hover {
+  filter: brightness(1.05);
+}
+
+.button.ghost {
+  background: transparent;
+  border-color: var(--color-border);
+}
+
+/* Inputs */
+.input,
+.select,
+.textarea {
+  width: 100%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+}
+
+/* Lists / Tables */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(17, 24, 39, 0.5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table th {
+  background: rgba(255,255,255,0.03);
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: #93c5fd;
+}
+
+/* Utilities */
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.spacer {
+  height: 16px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(96, 165, 250, 0.15);
+  color: #dbeafe;
+  border: 1px solid rgba(96, 165, 250, 0.25);
+}
+
+/* Page sections (optional) */
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.page-subtitle {
+  color: var(--color-muted);
+  margin: 0 0 20px;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

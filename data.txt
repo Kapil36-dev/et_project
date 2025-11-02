@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "69070a75f9030338f270c8c8",
+    "itemName": "MacBook Air M2",
+    "description": "Apple MacBook Air M2, 8GB RAM, 512GB SSD",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 20000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c8c1",
+    "itemName": "MacBook Air M1",
+    "description": "Apple MacBook Air M1, 8GB RAM, 256GB SSD",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 18000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c8c6",
+    "itemName": "MacBook Pro M3",
+    "description": "Apple MacBook Pro M3, 16GB RAM, 1TB SSD",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 25000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c8d0",
+    "itemName": "Canon EOS 90D",
+    "description": "Canon DSLR camera with 18-135mm lens",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 7000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c8d5",
+    "itemName": "Sony Alpha a7 III",
+    "description": "Sony Mirrorless camera, 24MP, Full Frame",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 9000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c8d9",
+    "itemName": "DJI Mavic Air 2",
+    "description": "Compact drone with 4K camera and GPS",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 12000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c8e0",
+    "itemName": "GoPro Hero 11",
+    "description": "Waterproof action camera with 5.3K video",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 4000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c8f0",
+    "itemName": "Lenovo ThinkPad X1 Carbon",
+    "description": "Business laptop, i7 12th Gen, 16GB RAM",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 15000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c900",
+    "itemName": "iPad Pro 12.9",
+    "description": "Apple iPad Pro 12.9-inch with Apple Pencil",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 10000,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  },
+  {
+    "_id": "69070a75f9030338f270c911",
+    "itemName": "Bose Noise Cancelling Headphones 700",
+    "description": "Wireless Bluetooth headphones with ANC",
+    "serviceProviderUserId": "27a9a961-e71a-4669-a5c3-b328741c8b1b",
+    "rentalFee": 2500,
+    "status": "AVAILABLE",
+    "_class": "com.example.ShareResources.model.Item"
+  }
+]
